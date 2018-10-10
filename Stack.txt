@@ -1,0 +1,42 @@
+arr=[]
+def isEmpty()
+    if(arr.__len__()==0)
+        print (Stack is empty)
+        return True
+    else
+        print (Stack is not Empty)
+        return False
+
+def push(i)
+         if(arr.__len__()==5)
+             print (Stack is full)
+         else
+             arr.append(i)
+             print(Item is pushed in stack)
+
+def pop()
+    if(isEmpty()==False)
+        print (arr[-1])
+        arr.pop()
+        print (Item is deleted)
+
+
+    else
+        println (Stack is Empty)
+
+
+def top()
+    if(isEmpty())
+        print (Stack is Empty)
+    else
+        return arr[arr.__len__()-1]
+
+push(10)
+push(20)
+push(30)
+push(40)
+push(50)
+push(60)
+pop()
+isEmpty()
+print(arr)
